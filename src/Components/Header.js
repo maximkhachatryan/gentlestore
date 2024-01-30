@@ -2,7 +2,7 @@ import React from "react";
 import SearchBar from "./SearchBar";
 import { Avatar } from "antd";
 import { UserOutlined, EnvironmentOutlined } from "@ant-design/icons";
-import Navbar from './navBar'
+import Navbar from './NavBarr'
 
 export default function App() {
   let styles = {
