@@ -20,7 +20,7 @@ const items = [
     to: '/t-shirts'
   },
   {
-    label: 'Սպորտային Զգեստներ',
+    label: 'Սպորտային',
     to: '/sports'
   }
 ];
@@ -31,6 +31,7 @@ const App = () => {
     console.log('click ', e);
     setCurrent(e.key);
   };
+
   // return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
   return (
     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal">

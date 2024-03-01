@@ -2,9 +2,10 @@ import React from "react";
 import { Button, Flex } from "antd";
 import { Card } from "antd";
 const { Meta } = Card;
-const App = () => {
+const Item = ({ product }) => {
   let styles = {
     width: "100%",
+    backgroundColor: "#986321"
     // marginLeft: "20px",
   };
   return (
@@ -14,8 +15,8 @@ const App = () => {
       }}
       cover={
         <img
-          alt="example"
-          src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+          alt={product.name}
+          src={product.variants[Math.floor(Math.random()*product.variants.length)].imageUrl}
         />
       }
       actions={[
@@ -26,8 +27,8 @@ const App = () => {
         </div>,
       ]}
     >
-      <Meta title="Product" description="description" />
+      <Meta title={product.name} description={Math.floor(product.bundlePrice / product.bundleQuantity)} />
     </Card>
   );
 };
-export default App;
+export default Item;

@@ -4,7 +4,7 @@ import Navbar from './NavBar'
 
 export default function App() {
   let styles = {
-    backgroundColor: "gray",
+    backgroundColor: "#985412",
     height: "70px",
     display: "flex",
     alignItems: "center",
