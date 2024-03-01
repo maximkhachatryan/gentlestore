@@ -4,8 +4,8 @@ import { Card } from "antd";
 const { Meta } = Card;
 const App = () => {
   let styles = {
-    width: "180px",
-    marginLeft: "20px",
+    width: "100%",
+    // marginLeft: "20px",
   };
   return (
     <Card
@@ -21,10 +21,7 @@ const App = () => {
       actions={[
         <div>
           <Flex gap="small" wrap="wrap">
-            <Button type="primary" style={styles}>
-              Buy
-            </Button>
-            <Button>View</Button>
+            <Button type="primary" style={styles}>View</Button>
           </Flex>
         </div>,
       ]}

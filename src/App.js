@@ -1,7 +1,9 @@
 import "./App.css";
 import HomePage from "./Pages/HomePage";
-import ProdPage from "./Pages/ProdPage";
-import ContactUs from "./Pages/ContactUsPage";
+import PantsPage from "./Pages/PantsPage";
+import ShirtsPage from "./Pages/ShirtsPage";
+import TShirtsPage from './Pages/TShirtsPage'
+import SportsPage from './Pages/SportsPage'
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,8 +11,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/products" element={<ProdPage />}></Route>
-        <Route path="/contact" element={<ContactUs />}></Route>
+        <Route path="/shirts" element={<PantsPage />}></Route>
+        <Route path="/pants" element={<ShirtsPage />}></Route>
+        <Route path="/t-shirts" element={<TShirtsPage />}></Route>
+        <Route path="/sports" element={<SportsPage />}></Route>
       </Routes>
     </div>
     // <div className="App">
